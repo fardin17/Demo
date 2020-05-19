@@ -17,6 +17,9 @@ class Navigation extends Component {
                         <Nav.Link href="Profile">Profile</Nav.Link>
                         <Nav.Link href="About">About</Nav.Link>
                         <Nav.Link href="Contactinfo">Contactinfo</Nav.Link>
+                        <Nav.Link href="Tryparallax">Parallax Section</Nav.Link>
+                        <Nav.Link href="Tryscroll">Parallax Scroll</Nav.Link>
+                        <Nav.Link href="Video">Video Play</Nav.Link>
                         <Nav.Link href="Login">Login</Nav.Link>
                     </Nav>
 

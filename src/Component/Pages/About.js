@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Redirect} from "react-router-dom";
+import fire from "./TryFirebase";
 
 class About extends Component {
 
@@ -19,8 +20,11 @@ class About extends Component {
     }
     submitClick(){
 
-            alert("Data Saved")
-
+            let nameRef=fire.database().ref('name').orderByKey().limitToLast(100)
+           fire.database().ref('name').push(this.state.uname)
+        this.setState(
+            {uname:""}
+        )
     }
 
 
